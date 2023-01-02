@@ -84,14 +84,14 @@ def plot_lines(test_acc, data):
 			f'Avg. {blas.around(blas.mean(plot_data), 2)}s Cycle Duration'
 		]
 		p.plot(range(1, len(plot_data) + 1), plot_data, label=lbls[i], linewidth=0.75)
-		for l in ['x', 'y']: p.tick_params(axis=l, rotation=30)
+		p.tick_params(axis='x', rotation=60)
+		# for l in ['x', 'y']: p.tick_params(axis=l, rotation=45)
 		p.set(ylabel=plot_title)
 		p.margins(x=0.03, y=0.05)
 		p.legend(loc='best')
 		if plot_title == 'Time': p.set(xlabel='Cycle')
 		else: p.set_xticks([])
 	plt.xticks(np.arange(1, len(data[0]['data'])+1, 1))
-	plt.yticks(rotation=30)
 	plt.show()
 
 def show_predictions(test_imgs, predictions, model_acc):
@@ -102,7 +102,7 @@ def show_predictions(test_imgs, predictions, model_acc):
 	imgs = imgs.reshape([15, 28, 28])
 	fig, axs = plt.subplots(3, 5)
 	plt.suptitle(f' MNIST Model Predictions (Model Acc. {model_acc}%)', fontsize=16, fontweight='bold')
-	fig.subplots_adjust(top=0.85, bottom=0.05, left=0.05, right=0.95, hspace=0.5, wspace=0.5)
+	fig.subplots_adjust(top=0.85, bottom=0.05, left=0.05, right=0.95, hspace=0.5, wspace=0.75)
 	for row in range(3):
 		for col in range(5):
 			p = axs[row,col]
@@ -157,7 +157,7 @@ def train(train_x, train_y, layers, cycles, lr):
 		cycle_start = time.time()
 		cost, acc = 0, 0
 		for b,batch in enumerate(cycle_batches):
-			if cycle==0 and b==17: cycle_start = train_start = time.time()
+			if cycle==0 and b==31: cycle_start = train_start = time.time()
 			output = forward(batch[0], weights)
 			error = output[-1][1] - batch[1]
 			backward(batch[0], error, weights, output, lr)
@@ -184,12 +184,12 @@ def test(x, y, weights):
 
 if __name__ == "__main__":
 	os.system('cls' if os.name == 'nt' else 'clear')
-	print(f" Welcome to the simplest neural network possible... that's still useful.")
+	print(f" Welcome to the simplest MNIST neural network possible... that's still useful.")
 
 	train_x, train_y, test_x, test_y = load_data()
 
-	layers = [64,32]
-	cycles = 5
+	layers = [256,128,256,1024]
+	cycles = 31
 	learning_rate = 0.007
 
 	stats = train(train_x, train_y, layers, cycles, learning_rate)
