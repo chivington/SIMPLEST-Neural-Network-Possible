@@ -26,7 +26,6 @@ def shuffle(X, Y):
 	return X[idxs], Y[idxs]
 
 def load_data():
-	os.system('cls' if os.name == 'nt' else 'clear')
 	if os.path.exists('data/mnist_train.csv') and os.path.exists('data/mnist_test.csv'):
 		print(f'\n Loading training & testing datasets...')
 		files = ['mnist_train', 'mnist_test']
@@ -53,20 +52,16 @@ def batch_data(X, Y, batch_size, cycles):
 	train_batches = []
 	for e in range(cycles):
 		shuffled_X, shuffled_Y = shuffle(X, Y)
-
 		m = X.shape[0]
 		num_batches = m // batch_size
-
 		batches = []
 		for batch in range(num_batches - 1):
 			start = batch * batch_size
 			end = (batch + 1) * batch_size
 			x, y = X[start:end], Y[start:end]
 			batches.append((x, y))
-
 		last_start = num_batches * batch_size
 		batches.append((X[last_start:], Y[last_start:]))
-
 		train_batches.append(batches)
 	batching_end = time.time()
 	print(f'({blas.around(batching_end - batching_start, 2)}s)    ')
@@ -78,7 +73,6 @@ def plot_lines(test_acc, data):
 	fig, plots = plt.subplots(3)
 	plt.suptitle(f'Model Performance Metrics (Model Acc. {test_acc}%)', fontsize=16, fontweight='bold')
 	fig.subplots_adjust(top=0.89, bottom=0.13, left=0.12, right=0.96, hspace=0.25, wspace=0.01)
-
 	for i, p in enumerate(plots):
 		plot_data, plot_title = data[i]["data"], data[i]["title"]
 		if MATH_ENV == 'cupy': plot_data = plot_data.get()
@@ -133,7 +127,6 @@ class Net:
 	def init_layers(self, layers):
 		init = []
 		num_layers = len(layers)
-
 		n = self.train_x.shape[1]
 		for l in range(num_layers + 1):
 			if l < num_layers:
@@ -146,7 +139,6 @@ class Net:
 				init.append(Dense([layers[-1], 10]))
 				init.append(Softmax())
 			print(f'  Layer {l+1} Dimensions: ({init[-2].weights.shape[0]} x {init[-2].weights.shape[1]})')
-
 		return init
 
 	def forward(self, batch):
@@ -255,8 +247,10 @@ class Softmax(Layer):
 	def backward(self, grad, lr):
 		return grad
 
-
 if __name__ == "__main__":
+	os.system('cls' if os.name == 'nt' else 'clear')
+	print(f" Welcome to the simplest neural network possible... that's still useful.")
+
 	train_x, train_y, test_x, test_y = load_data()
 
 	layers = [64,32]
