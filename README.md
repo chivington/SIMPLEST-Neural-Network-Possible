@@ -11,7 +11,7 @@ If you don't have CuPy installed on your system, the program will use NumPy (CPU
 
 "simplest-nn-oo.py" is just an object oriented version of "simplest-nn.py"
 
-They do the same thing and achieve the same performance. The OO version is just there if you'd like to see how to implement it in that way.
+They do the same thing and achieve the same results. The OO version is just there in case you want to see how to implement it in that way.
 
 Email john@discefasciendo.com with questions.
 
