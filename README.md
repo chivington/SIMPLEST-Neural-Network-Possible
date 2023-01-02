@@ -48,11 +48,11 @@ Feel free to ask me questions on [GitHub](https://github.com/chivington)
 
 <br/>
 <p align="center">
- <img width='600' src='https://github.com/chivington/SIMPLEST-Neural-Network-Possible/blob/main/imgs/predictions.png' alt='Predictions'/>
+ <img src='https://github.com/chivington/SIMPLEST-Neural-Network-Possible/blob/main/imgs/predictions.png' alt='Predictions'/>
 </p><br/>
 
 <p align="center">
- <img width='600' src='https://github.com/chivington/SIMPLEST-Neural-Network-Possible/blob/main/imgs/performance.png' alt='Performance'/>
+ <img src='https://github.com/chivington/SIMPLEST-Neural-Network-Possible/blob/main/imgs/performance.png' alt='Performance'/>
 </p>
 <br/><br/>
 
