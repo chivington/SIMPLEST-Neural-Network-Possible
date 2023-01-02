@@ -36,7 +36,7 @@ Enjoy!
 
 ## Usage
 ```bash
-cd data
+cd SIMPLEST-Neural-Network-Possible/data
 python download.py
 cd ..
 python simplest-nn.py
@@ -54,7 +54,7 @@ Feel free to ask me questions on [GitHub](https://github.com/chivington)
 <p align="center">
  <img src='https://github.com/chivington/SIMPLEST-Neural-Network-Possible/blob/main/imgs/performance.png' alt='Performance'/>
 </p>
-<br/><br/>
+<br/>
 
 
 ## Authors
