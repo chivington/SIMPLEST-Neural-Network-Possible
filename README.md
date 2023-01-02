@@ -19,16 +19,6 @@ Enjoy!
 ![License](https://img.shields.io/badge/license-NONE-green.svg)
 <br/><br/><br/>
 
-## Contents
-* [Prerequisites](https://github.com/chivington/Neural-Network-Performance-Analyzer/tree/master#prerequisites)
-* [Installation](https://github.com/chivington/Neural-Network-Performance-Analyzer/tree/master#installation)
-* [Usage](https://github.com/chivington/Neural-Network-Performance-Analyzer/tree/master#usage)
-* [Authors](https://github.com/chivington/Neural-Network-Performance-Analyzer/tree/master#authors)
-* [Contributing](https://github.com/chivington/Neural-Network-Performance-Analyzer/tree/master#contributing)
-* [Acknowledgments](https://github.com/chivington/Neural-Network-Performance-Analyzer/tree/master#acknowledgments)
-* [License](https://github.com/chivington/Neural-Network-Performance-Analyzer/tree/master#license)
-<br/>
-
 ## Prerequisites
  * Python
  * NumPy
@@ -40,35 +30,31 @@ Enjoy!
 
 ## Installation
 ```bash
- git clone https://github.com/chivington/Neural-Network-Performance-Analyzer.git
+ git clone https://github.com/chivington/SIMPLEST-Neural-Network-Possible.git
 ```
 <br/>
 
 ## Usage
-From the program folder, just run:
 ```bash
-	python mnist-nn.py
+	cd data
+	python download.py
+	cd ..
+	python simplest-nn.py
+	python simplest-nn-oo.py
 ```
 
-...and follow the prompts.
-
 For more details, see the [Video Demo](https://youtube.com/@discefasciendo)
-
 Feel free to ask me questions on [GitHub](https://github.com/chivington)
 
-<!-- <br/>
+<br/>
 <p align="center">
- <img width='600' src='https://github.com/chivington/Neural-Network-Performance-Analyzer/blob/master/imgs/random-img.jpg' alt='Random Digit'/>
+ <img width='600' src='https://github.com/chivington/SIMPLEST-Neural-Network-Possible/blob/master/imgs/predictions.png' alt='Predictions'/>
 </p><br/>
 
 <p align="center">
- <img width='600' src='https://github.com/chivington/Neural-Network-Performance-Analyzer/blob/master/imgs/errors-and-times.jpg' alt='Training & Validation Errors'/>
-</p><br/>
-
-<p align="center">
- <img width='600' src='https://github.com/chivington/Neural-Network-Performance-Analyzer/blob/master/imgs/classification.jpg' alt='Classification Test'/>
+ <img width='600' src='https://github.com/chivington/SIMPLEST-Neural-Network-Possible/blob/master/imgs/performance.png' alt='Performance'/>
 </p>
-<br/><br/> -->
+<br/><br/>
 
 
 ## Authors
