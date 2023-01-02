@@ -9,6 +9,10 @@ The neural network uses your GPU to train on the MNIST dataset and learn to reco
 
 If you don't have CuPy installed on your system, the program will use NumPy (CPU) instead. The training will run much slower, but it will achieve the same results.
 
+"simplest-nn-oo.py" is just an object oriented version of "simplest-nn.py"
+
+They do the same thing and achieve the same performance. The OO version is just there if you'd like to see how to implement it in that way.
+
 Email john@discefasciendo.com with questions.
 
 [Video Demo](https://youtube.com/@discefasciendo/video) in my [AI Finance series](https://youtube.com/@discefasciendo/playlist)
