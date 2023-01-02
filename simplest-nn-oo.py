@@ -2,7 +2,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 import time, sys, os
 
-
 # ----- SET MATH ENVIRONMENT
 MATH_ENV = 'numpy'
 blas = np
@@ -12,10 +11,7 @@ try:
 except Exception as e:
 	print(f" CuPy not found, running neural network on CPU.\n To install CuPy, visit:\n  https://docs.cupy.dev/en/stable/install.html")
 
-
-# ----- SEED RNG
 blas.random.seed(4)
-
 
 # ----- DATA FUNCTIONS
 def one_hot(Y, classes):
@@ -76,7 +72,6 @@ def batch_data(X, Y, batch_size, cycles):
 	print(f'({blas.around(batching_end - batching_start, 2)}s)    ')
 	return train_batches
 
-
 # ----- METRICS FUNCTIONS
 def plot_lines(test_acc, data):
 	data = [{'title': t, 'data':d} for t,d in [('Cost', data[0]), ('Accuracy', data[1]), ('Time', data[2])]]
@@ -120,7 +115,6 @@ def show_predictions(test_imgs, predictions, model_acc):
 			p.set_xticks([])
 			p.set_yticks([])
 	plt.show()
-
 
 # ----- NEURAL NETWORK CLASSES
 class Net:
