@@ -5,7 +5,7 @@
 # SIMPLEST Neural Network Possible
 This is THE SIMPLEST neural network implementation you will find. (...that's still useful.)
 
-This neural network uses your GPU to train on the MNIST dataset and learn to recognize images of hand-written digits.
+The neural network uses your GPU to train on the MNIST dataset and learn to recognize images of hand-written digits.
 
 If you don't have CuPy installed on your system, the program will use NumPy (CPU) instead. The training will run much slower, but it will achieve the same results.
 
