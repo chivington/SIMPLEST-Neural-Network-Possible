@@ -36,11 +36,11 @@ Enjoy!
 
 ## Usage
 ```bash
-	cd data
-	python download.py
-	cd ..
-	python simplest-nn.py
-	python simplest-nn-oo.py
+cd data
+python download.py
+cd ..
+python simplest-nn.py
+python simplest-nn-oo.py
 ```
 
 For more details, see the [Video Demo](https://youtube.com/@discefasciendo)
@@ -48,11 +48,11 @@ Feel free to ask me questions on [GitHub](https://github.com/chivington)
 
 <br/>
 <p align="center">
- <img width='600' src='https://github.com/chivington/SIMPLEST-Neural-Network-Possible/blob/master/imgs/predictions.png' alt='Predictions'/>
+ <img width='600' src='https://github.com/chivington/SIMPLEST-Neural-Network-Possible/blob/main/imgs/predictions.png' alt='Predictions'/>
 </p><br/>
 
 <p align="center">
- <img width='600' src='https://github.com/chivington/SIMPLEST-Neural-Network-Possible/blob/master/imgs/performance.png' alt='Performance'/>
+ <img width='600' src='https://github.com/chivington/SIMPLEST-Neural-Network-Possible/blob/main/imgs/performance.png' alt='Performance'/>
 </p>
 <br/><br/>
 
