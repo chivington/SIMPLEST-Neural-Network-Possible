@@ -1,5 +1,5 @@
 <p align="center">
- <img width='650' src='https://github.com/chivington/SIMPLEST-Neural-Network-Possible/blob/main/imgs/banner.png' alt='MNIST Digits'/>
+ <img width='600' src='https://github.com/chivington/SIMPLEST-Neural-Network-Possible/blob/main/imgs/banner.png' alt='MNIST Digits'/>
 </p>
 
 # SIMPLEST Neural Network Possible
