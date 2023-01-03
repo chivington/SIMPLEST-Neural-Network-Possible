@@ -25,6 +25,7 @@ def shuffle(X, Y):
 	return X[idxs], Y[idxs]
 
 def load_data():
+	os.system('cls' if os.name == 'nt' else 'clear')
 	if os.path.exists('data/mnist_train.csv') and os.path.exists('data/mnist_test.csv'):
 		print(f'\n Loading training & testing datasets...')
 		files = ['mnist_train', 'mnist_test']
@@ -183,9 +184,6 @@ def test(x, y, weights):
 	return acc, predictions
 
 if __name__ == "__main__":
-	os.system('cls' if os.name == 'nt' else 'clear')
-	print(f" Welcome to the simplest MNIST neural network possible... that's still useful.")
-
 	train_x, train_y, test_x, test_y = load_data()
 
 	layers = [256,128,256,1024]
