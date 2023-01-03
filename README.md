@@ -3,7 +3,7 @@
 </p>
 
 # SIMPLEST Neural Network Possible
-This is THE SIMPLEST neural network implementation you will find. (...that's still useful.)
+This is THE SIMPLEST neural network implementation you will find (...that's still useful.)
 
 The neural network uses your GPU to train on the MNIST dataset and learn to recognize images of hand-written digits.
 
