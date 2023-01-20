@@ -13,9 +13,9 @@ If you don't have CuPy installed on your system, the program will use NumPy (CPU
 
 They do the same thing and achieve the same results. The OO version is just there in case you want to see how to implement it in that way.
 
-Email john@discefasciendo.com with questions.
+Email me@johnathanalyst.com with questions.
 
-[Video Demo](https://youtube.com/@discefasciendo/video) in my [AI Finance series](https://youtube.com/@discefasciendo/playlist)
+[Video Demo](https://youtube.com/@johnathanalyst/video) in my [AI Finance series](https://youtube.com/@johnathanalyst/playlist)
 
 Enjoy!
 
@@ -47,7 +47,7 @@ python simplest-nn.py
 python simplest-nn-oo.py
 ```
 
-For more details, see the [Video Demo](https://youtube.com/@discefasciendo)
+For more details, see the [Video Demo](https://youtube.com/@johnathanalyst)
 Feel free to ask me questions on [GitHub](https://github.com/chivington)
 
 <br/>
